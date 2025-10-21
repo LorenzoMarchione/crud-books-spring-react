@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-gray-100 flex items-start justify-center p-6">
+      <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-blue-200  flex items-start justify-center p-6">
         <div className="w-full max-w-4xl bg-white shadow-lg rounded-xl p-6">
           <header className="flex items-center justify-between mb-6">
             <h1 className="text-2xl font-semibold flex items-center gap-3">
