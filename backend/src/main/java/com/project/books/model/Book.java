@@ -3,6 +3,8 @@ package com.project.books.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.sql.Timestamp;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -15,6 +17,15 @@ public class Book {
 
     private String title;
     private String author;
-    private int yearPublication;
-    private String summary;
+    private String country;
+    private String language;
+    private String image;
+    private String link;
+    @Column(name = "image_link")
+    private String imageLink;
+    private String pages;
+    private Integer year;
+
+    @Column(name = "created_at")
+    private Timestamp createdAt;
 }

@@ -39,11 +39,6 @@ public class BookService {
         if (bookDetails.getAuthor() != null)
             book.setAuthor(bookDetails.getAuthor());
 
-        if (bookDetails.getSummary() != null)
-            book.setSummary(bookDetails.getSummary());
-
-        if(bookDetails.getYearPublication() != 0)
-            book.setYearPublication(bookDetails.getYearPublication());
 
         return bookRepository.save(book);
     }
